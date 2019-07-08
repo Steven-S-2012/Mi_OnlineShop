@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业3-小米网站</title>
+	<meta name="viewport" content="width=1226">
+	<meta http-equiv="">
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/recmcontrol.js" async ="async"></script>
+	<script type="text/javascript" src="./js/sidebar.js" async ="async"></script>
+	<script type="text/javascript" src="./js/salesreview.js" async ="async"></script>
+	<script type="text/javascript" src="./js/slidercontrol.js" async ="async"></script>
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont/iconfont.css">
+	<!-- <script type="text/javascript" src="font/iconfont/iconfont.js"> </script>-->
+</head>
+<body>
+	<!-- 顶部导航栏开始 -->
+	<div class="site-topbar">
+		<div class="container">
+			<div class="topbar-nav">
+				<a href="#" rel="nofollow">小米商城</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">MIUI</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">loT</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">云服务</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">金融</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">有品</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">小爱开放平台</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">政企服务</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">资质证明</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">协议规划</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">下载APP</a>
+				<span class="sep">|</span>
+				<a href="#" rel="nofollow">Select Region</a>
+			</div>
+
+			<div class="topbar-cart" id="J_miniCartTrigger">
+				<a href="#" rel="nofollow" class="cart-mini" id="J_miniCartBtn">
+					<i class="iconfont icon-ShoppingCart_"></i>购物车<span class="cart-mini-num ">（0）</span>
+				</a>
+				<div class="cart-menu" id="J_miniCartMenu">
+					<div class="loading">
+						<div class="loader"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="topbar-info" id="J_userInfo">
+				<a rel="nofollow" class="link" href="javascript:void(0);">登录</a>
+				<span class="sep">|</span>
+				<a rel="nofollow" class="link" href="javascript:void(0);">注册</a>
+				<span class="sep">|</span>
+				<span class="message">
+					<a rel="nofollow" class="J_needAgreement" href="javascript:void(0)">
+						消息通知
+						<i class="J_miMessageTotal"></i>
+					</a>					
+				</span>				
+			</div>
+		</div>
+	</div>
+	<!-- 顶部导航栏结束 -->
+
+	<!-- 页面导航栏开始 -->
+	<div class="site-header">
+		<div class="container">
+			<div class="header-logo">
+				<a class="logo ir" href="//www.mi.com/index.html" title="小米官网">小米官网</a>
+			</div>
+			<!-- 上部推荐菜单开始 -->
+			<div class="header-nav">				
+				<ul class="nav-list J_navMainList clear-fix">
+					<li id="J_navCategory" class="nav-category">
+						<a class="link-category" href="javascript:void(0)">
+							<span class="text">全部商品分类</span>
+						</a>
+						<!-- 所有商品菜单开始 -->
+						<div class="site-category">
+							<ul id="J_categoryList" class="site-category-list clear-fix">
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										手机 电话卡
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-4">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8se-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix2s80-80white.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 2S</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/max3-80-80.png" alt="" width="40" height="40">
+													<span class="text">小米Max 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80808080808080.jpg" alt="" width="40" height="40">
+													<span class="text">小米6X</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heishahelo-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机 Helo</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heisha-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-3">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/note780-80.png" alt="" width="40" height="40">
+													<span class="text">红米Note 7</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/6pro140-140.png" alt="" width="40" height="40">
+													<span class="text">红米6 Pro</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/666666.png" alt="" width="40" height="40">
+													<span class="text">红米6</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/6AAAA.png" alt="" width="40" height="40">
+													<span class="text">红米6A</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/note5-80-80.png" alt="" width="40" height="40">
+													<span class="text">红米Note 5</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80.jpg" alt="" width="40" height="40">
+													<span class="text">移动4G+专区</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-4">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>								
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										电视 盒子
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-4">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8se-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix2s80-80white.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 2S</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/max3-80-80.png" alt="" width="40" height="40">
+													<span class="text">小米Max 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80808080808080.jpg" alt="" width="40" height="40">
+													<span class="text">小米6X</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heishahelo-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机 Helo</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heisha-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-3">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/note780-80.png" alt="" width="40" height="40">
+													<span class="text">红米Note 7</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/6pro140-140.png" alt="" width="40" height="40">
+													<span class="text">红米6 Pro</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/666666.png" alt="" width="40" height="40">
+													<span class="text">红米6</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/6AAAA.png" alt="" width="40" height="40">
+													<span class="text">红米6A</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/note5-80-80.png" alt="" width="40" height="40">
+													<span class="text">红米Note 5</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80.jpg" alt="" width="40" height="40">
+													<span class="text">移动4G+专区</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-4">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										笔记本 平板
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-2">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>										
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										家电 插线板
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-2">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>										
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										出行 穿戴
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-3">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8se-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix2s80-80white.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 2S</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/max3-80-80.png" alt="" width="40" height="40">
+													<span class="text">小米Max 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80808080808080.jpg" alt="" width="40" height="40">
+													<span class="text">小米6X</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heishahelo-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机 Helo</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heisha-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机</span>
+												</a>
+											</li>
+										</ul>										
+										<ul class="children-list children-list-col children-list-col-3">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										智能 路由器
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-3">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+										<ul class="children-list children-list-col children-list-col-2">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8se-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix2s80-80white.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 2S</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/max3-80-80.png" alt="" width="40" height="40">
+													<span class="text">小米Max 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/80808080808080.jpg" alt="" width="40" height="40">
+													<span class="text">小米6X</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heishahelo-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机 Helo</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/heisha-80.png" alt="" width="40" height="40">
+													<span class="text">黑鲨游戏手机</span>
+												</a>
+											</li>
+										</ul>										
+										<ul class="children-list children-list-col children-list-col-3">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/compare.jpg" alt="" width="40" height="40">
+													<span class="text">对比手机</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mifenka-1.jpg" alt="" width="40" height="40">
+													<span class="text">米粉卡 日租卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mimobile.jpg" alt="" width="40" height="40">
+													<span class="text">小米移动 电话卡</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/weixiu80-80.png" alt="" width="40" height="40">
+													<span class="text">手机上门维修</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/yunfuwu.jpg" alt="" width="40" height="40">
+													<span class="text">云服务空间月卡</span>
+												</a>
+											</li>											
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										电源 配件
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-1">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										健康 儿童
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-1">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										耳机 音箱
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-1">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mix3-80.png" alt="" width="40" height="40">
+													<span class="text">小米MIX 3</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="category-item">
+									<a class="title" href="javascript:voiid(0)">
+										生活 箱包
+										<i class="iconfont">&#xe628;</i>
+									</a>
+									<div class="children clear-fix children-col-1">
+										<ul class="children-list children-list-col children-list-col-1">
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9-80.png" alt="" width="40" height="40">
+													<span class="text">小米9</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/mi9se-80.png" alt="" width="40" height="40">
+													<span class="text">小米9 SE</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/qingchun-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 青春版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/pingmu-80.png" alt="" width="40" height="40">
+													<span class="text">小米8 屏幕指纹版</span>
+												</a>
+											</li>
+											<li>
+												<a class="link" href="javascript:voiid(0)">
+													<img class="thumb" src="./images/80X80/site_category/m8-80.png" alt="" width="40" height="40">
+													<span class="text">小米8</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- 所有商品菜单结束 -->
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">小米手机</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9
+											</a>
+										</div>
+										<p class="price">2999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">红米</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">电视</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">笔记本</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">家电</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">新品</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">路由器</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">职能硬件</span>
+						</a>
+						<div class="item-children">
+							<div class="container">
+								<ul class="children-list clear-fix">
+									<li class="first">
+										<div class="figure figure-thumb">
+											<a href="javascript:void(0)">
+												<img src="./images/320X220/mi9-320.png" alt="小米9 SE" width="160" height="110">
+											</a>
+										</div>
+										<div class="title">
+											<a href="javascript:void(0)">
+												小米9 SE
+											</a>
+										</div>
+										<p class="price">1999元起</p>
+										<div class="flags">
+											<div class="flag">新品</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">服务</span>
+						</a>						
+					</li>
+					<li class="nav-item">
+						<a class="link" href="javascript:void(0)">
+							<span class="text">社区</span>
+						</a>					
+					</li>					
+				</ul>
+			</div>
+			<!-- 上部推荐菜单结束 -->
+			<div class="header-search">
+				<form id="J_searchForm" class="search-form clear-fix" action="">
+					<label for="search" class="hide">站内搜索</label>
+					<input id="search" class="search-text" type="search" name="keyword" autocomplete="off">
+					<input class="search-btn iconfont" type="submit" value="&#xe613;">
+					<div class="search-hot-words" style="display: block;">
+						<a href="javascript:vodi(0)">小米9</a>
+						<a href="javascript:vodi(0)">小米9 SE</a>
+					</div>
+					<div id="J_keywordList" class="keyword-list hide">
+						<ul class="result-list">
+							<li><a href="javascript:void(0)">小米6X<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">小米MIX 2S<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">黑鲨游戏手机<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">红米Note 5<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">红米5A<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">小米电视4C<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">电视32英寸<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">笔记本pro<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">空气净化器<span class="result">约有6件</span></a></li>
+							<li><a href="javascript:void(0)">净水器<span class="result">约有6件</span></a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- 上部推荐菜单下拉菜单开始 -->
+		<div id="J_navMenu" class="header-nav-menu header-nav-menu-active" style="display: none;">
+			<div class="container">
+				<ul class="children-list clear-fix">
+					<li class="first">
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+					<li>
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+					<li>
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+					<li>
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+					<li>
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+					<li>
+						<div class="figure figure-thumb">
+							<a href="javascript:void(0)">
+								<img src="./images/320X220/mi9-320.png" alt="小米9" width="160" height="110">
+							</a>
+						</div>
+						<div class="title">
+							<a href="javascript:void(0)">
+								小米9
+							</a>
+						</div>
+						<p class="price">2999元起</p>
+						<div class="flags">
+							<div class="flag">新品</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 上部推荐菜单下拉菜单结束 -->
+	</div>
+
+	<!-- 页面导航栏结束 -->
+
+	<!-- 商品推荐栏开始 -->
+	<div class="home-hero-container container">
+		<div class="home-hero">
+			<!-- 轮播图开始 -->
+			<div class="home-hero-slider">
+				<div class="ui-wrapper" style="max-width: 100%">
+					<div class="ui-viewport" style="width: 100%; overflow: hidden; position: relative; height: 460px;">
+						<div id="J_homeSlider" class="xm-slider" style="width: auto; position: relative;">
+							<div class="slide loaded exposure" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: block;">
+								<a href="javascript:void(0)">
+									<img src="./images/2452X920/1.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide loaded exposure" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;">
+								<a href="javascript:void(0)">
+									<img src="./images/2452X920/2.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide loaded exposure" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;">
+								<a href="javascript:void(0)">
+									<img src="./images/2452X920/3.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide loaded exposure" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;">
+								<a href="javascript:void(0)">
+									<img src="./images/2452X920/4.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide loaded exposure" style="float: none; list-style: none; position: absolute; width: 1226px; z-index: 0; display: none;">
+								<a href="javascript:void(0)">
+									<img src="./images/2452X920/5.jpg" alt="">
+								</a>
+							</div>
+						</div>						
+					</div>
+					<div class="ui-controls ui-has-pager ui-has-controls-direction">
+						<div class="ui-pager ui-default-pager">
+							<div class="ui-pager-item">
+								<a class="ui-pager-link" href="javascript:void(0)">1</a>
+							</div>
+							<div class="ui-pager-item">
+								<a class="ui-pager-link" href="javascript:void(0)">2</a>
+							</div>
+							<div class="ui-pager-item">
+								<a class="ui-pager-link" href="javascript:void(0)">3</a>
+							</div>
+							<div class="ui-pager-item">
+								<a class="ui-pager-link" href="javascript:void(0)">4</a>
+							</div>
+							<div class="ui-pager-item">
+								<a class="ui-pager-link" href="javascript:void(0)">5</a>
+							</div>
+						</div>
+						<div class="ui-controls-direction">
+							<a class="ui-prev" href="javascript:void(0)">上一张</a>
+							<a class="ui-next" href="javascript:void(0)">下一张</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 轮播图结束 -->
+			<!-- 推荐图开始 -->
+			<div class="home-hero-sub row">
+				<div class="span4">
+					<ul class="home-channel-list clear-fix">
+						<li class="exposure top left">
+							<a href="javascript:void(0)"><i class="iconfont">&#xe607;</i>选购手机</a>
+						</li>
+						<li class="exposure top">
+							<a href="javascript:void(0)"><i class="iconfont">&#xe60c;</i>企业团购</a>
+						</li>
+						<li class="exposure top">
+							<a href="javascript:void(0)"><i class="iconfont">&#xe601;</i>F码通道</a>
+						</li>
+						<li class="exposure left">
+							<a href="javascript:void(0)"><i class="iconfont">&#xea74;</i>米粉卡</a>
+						</li>
+						<li class="exposure">
+							<a href="javascript:void(0)"><i class="iconfont">&#xe60f;</i>以旧换新</a>
+						</li>
+						<li class="exposure">
+							<a href="javascript:void(0)"><i class="iconfont">&#xe65c;</i>话费充值</a>
+						</li>
+					</ul>
+				</div>
+				<div class="span16" id="J_homePromo">
+					<ul class="home-promo-list clear-fix">
+						<li class="first">
+							<a class="item exposure" href="javascript:void(0)">
+								<img src="./images/632X340/xmad_1550713536261_EJOpq.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="item exposure" href="javascript:void(0)">
+								<img src="./images/632X340/xmad_15510775494887_EWGcg.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="item exposure" href="javascript:void(0)">
+								<img src="./images/632X340/xmad_15410599445473_Ivjsb.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 推荐图结束 -->
+		</div>
+		<!-- 长形图开始 -->
+		<div class="J_itemBox J_homeBanner home-banner-box home-banner-box-hero is-visible">
+			<a href="javascript:void(0)">
+				<img src="./images/2452X240/xmad_1551330021515_wHnsY.jpg" alt="" width="1226">
+			</a>
+		</div>
+		<!-- 长形图结束 -->		
+	</div>
+	<!-- 商品推荐栏结束 -->
+
+	<!-- 商城开始 -->
+	<div class="page-main home-main">
+		<div class="container">
+			<div id="homeelec" class="home-brick-box home-brick-row-2-box xm-plain-box is-visible">
+				<div class="box-hd">
+					<h2 class="title">家电</h2>
+					<div class="more J-brickNav">
+						<ul class="tab-list J_brickTabSwitch">
+							<li class="tab-active">热门</li>
+							<li>电视影音</li>
+							<li>电脑</li>
+							<li>家居</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-bd J_brickBd">
+					<div class="row">
+						<div class="span4">
+							<ul class="brick-promo-list clear-fix">
+								<li class="brick-item brick-item-m">
+									<a class="exposure" href="javascript:">
+										<img src="./images/homeelec/xmad_15232433421155_vCzhJ.jpg" alt="">
+									</a>
+								</li>
+								<li class="brick-item brick-item-m">
+									<a class="exposure" href="javascript:">
+										<img src="./images/homeelec/xmad_15407948090121_sNfyZ.jpg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="span16">
+							<div id="homeelec-content" class="tab-container">
+								<ul class="brick-list tab-content clear-fix">
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/xmad_15512365381648_yZpKS.jpg" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">互联网洗烘一体机10kg</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">2499</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/yijinegxiaokongtiaoxin.jpg" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">互联网空调</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">2299</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/xmad_15350951136177_QUuVm.png" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">15.6"笔记本 i5 4G MX110</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">4199</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/daohang13.3.jpg" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">13.3"小米笔记本Air 四核i7 8G 256G MX150 银色</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">5999</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/xmad_14972549116226_tZpod.png" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">空气净化器Pro</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">1499</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/pms_1465366178.11466342_220x220.jpg" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">电水壶</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">99</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-m">
+										<div class="figure figure-img"><a class="exposure" href="javascript:"><img src="./images/homeelec/xmad_15281923207128_rOfDp.png" alt="" width="150" height="150"></a></div>
+										<h3 class="title"><a href="javascript:">LED吸顶灯</a></h3>
+										<p class="desc"></p>
+										<p class="price"><span class="num">399</span>元</p>
+										<p class="rank"></p>
+										<div class="flag flag-new">新品</div>
+										<div class="review-wrapper">
+											<a href="javascript:">
+												<span class="review">挺好用的，白色很简单，好看</span>
+												<span class="author">来自于 白羊董小姐 的评价</span>
+												<span class="data"></span>
+											</a>
+										</div>
+									</li>
+									<li class="brick-item brick-item-s">
+										<div class="figure figure-img">
+											<a class="exposure" href="javascript:"><img src="./images/homeelec/pms_1521634907.16181074_220x220.jpg" alt="" width="80" height="80"></a>
+										</div>
+										<h3 class="title">
+											<a class="exposure" href="javascript:">厨下式净水器</a>
+										</h3>
+										<p class="price"><span class="num">399</span>元</p>
+									</li>
+									<li class="brick-item brick-item-s">
+										<div class="figure figure-more">
+											<a class="exposure" href="javascript:"><i class="iconfont">&#xe60b;</i></a>
+										</div>
+										<a class="more" href="javascript:">浏览更多<small>热门</small></a>
+									</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="recommend" class="home-recm-box home-brick-box home-brick-row-1-box xm-plain-box J_itemBox J_recommendbox is-visible">
+				<div class="box-hd">
+					<h2 class="title">为你推荐</h2>
+					<div class="more">
+						<div class="xm-controls xm-controls-line-small xm-carousel-controls">
+							<a class="control control-prev iconfont control-disabled" href="javascript:void(0)">&#xe654;</a>
+							<a class="control control-next iconfont" href="javascript:void(0)">&#xe655;</a>
+						</div>
+					</div>
+				</div>
+				<div id="recommend-bd" class="box-bd container xm-carousel-container">
+					<div class="xm-recommend">
+						<div class="xm-carousel-wrapper" style="height: 320px; overflow: hidden">
+							<ul class="xm-carousel-col-5-list xm-carousel-list clear-fix" style="width: 2480px; margin-left: 0px; transition: margin-left 0.5s ease 0s;">
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/109e6a758cc7a6ff593b1ee67a79c787!280x280.jpeg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 最生活浴巾•Air（1条装） </a></dd>
+										<dd class="xm-recommend-price">69元</dd>			
+										<dd class="xm-recommend-tips">   49人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1537839576.29563635!140x140.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> FREETIE云弹减震运动鞋 男款 </a></dd>
+										<dd class="xm-recommend-price">249元</dd>			
+										<dd class="xm-recommend-tips">   1401人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/25b5f15ad241db06c843158f273d6bff!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 均衡五色果蔬燕麦片组合装 </a></dd>
+										<dd class="xm-recommend-price">69元</dd>			
+										<dd class="xm-recommend-tips">   18人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/ae78787b5a47a4d473954bb9989170fc!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 悦活每日水果燕麦 </a></dd>
+										<dd class="xm-recommend-price">49元</dd>			
+										<dd class="xm-recommend-tips">   38人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/5a35354e4fe01f27dfacc0bd55992491!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 时怡中粮优选碧根果 </a></dd>
+										<dd class="xm-recommend-price">49.9元</dd>			
+										<dd class="xm-recommend-tips">   10人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1537512371.04083951!140x140.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 云米不锈钢真空保温壶 </a></dd>
+										<dd class="xm-recommend-price">119元</dd>			
+										<dd class="xm-recommend-tips">   2079人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1531379680.78942104!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 小米USB-C TO USB-C数据线 </a></dd>
+										<dd class="xm-recommend-price">29元</dd>			
+										<dd class="xm-recommend-tips">   396人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1540977306.2883588!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 8H可调节支撑腰靠 </a></dd>
+										<dd class="xm-recommend-price">89元</dd>			
+										<dd class="xm-recommend-tips">   238人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1538191811.62822334!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> Amazfit智能运动手表2S </a></dd>
+										<dd class="xm-recommend-price">1499元</dd>			
+										<dd class="xm-recommend-tips">   406人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+								<li class="J_xm-recommend-list">
+									<dl>
+										<dt><a href="javascript:void(0)"><img src="./images/homerecom/pms_1545303051.38414485!280x280.jpg" alt=""></a></dt>
+										<dd class="xm-recommend-name"><a href="javascript:void(0)"> 小米米家照片打印机 </a></dd>
+										<dd class="xm-recommend-price">499元</dd>			
+										<dd class="xm-recommend-tips">   3724人好评    </dd>
+										<dd class="xm-recommend-notice"></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 商城结束 -->
+
+	<!-- 侧边栏开始 -->
+	<div class="home-right-bar home-right-bar-show-s J_homeRightBar">
+		<div class="bar-1">
+			<div id="J_rightbar_1">
+				<ul class="bar-top">
+					<li class="bar-sort bar-sort-qr">
+						<a class="bar-link" href="javascript:;">
+							<div class="bar-img">
+								<img class="original-img" src="./images/tag/98a23aae70f25798192693f21c4d4039.png" alt="">
+								<img class="hover-img" src="./images/tag/74c4fcb4475af8308e9a670db9c01fdf.png" alt="">
+							</div>
+							<p class="bar-text">手机APP</p>
+							<div class="bar-pop">
+								<div class="bar-pop-content">
+									<img class="bar-pop-qr" src="./images/tag/93650133310ec1c385487417a472a26c.png" alt="">
+									<p class="bar-pop-text">手机扫一扫一分赢好礼</p>
+								</div>
+								<div class="bar-arrow"></div>
+							</div>
+						</a>
+					</li>
+					<li class="bar-sort">
+						<a class="bar-link" href="javascript:;">
+							<div class="bar-img">
+								<img class="original-img" src="./images/tag/55cad219421bee03a801775e7309b920.png" alt="">
+								<img class="hover-img" src="./images/tag/41f858550f42eb1770b97faf219ae215.png" alt="">
+							</div>
+							<p class="bar-text">个人中心</p>
+						</a>
+					</li>
+					<li class="bar-sort">
+						<a class="bar-link" href="javascript:;">
+							<div class="bar-img">
+								<img class="original-img" src="./images/tag/4f036ae4d45002b2a6fb6756cedebf02.png" alt="">
+								<img class="hover-img" src="./images/tag/5e9f2b1b0da09ac3b3961378284ef2d4.png" alt="">
+							</div>
+							<p class="bar-text">联系客服</p>
+						</a>
+					</li>
+					<li class="bar-sort bar-1-car">
+						<a class="bar-link" href="javascript:;">
+							<div class="bar-img">
+								<img class="original-img" src="./images/tag/d7db56d1d850113f016c95e289e36efa.png" alt="">
+								<img class="hover-img" src="./images/tag/692a6c3b0a93a24f74a29c0f9d68ec71.png" alt="">
+								<span class="bar-car hidden">0</span>
+							</div>
+							<p class="bar-text">购物车</p>
+							<div class="pop"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<a class="bar-totop bar-sort J_barToTop J_barToTopL hidden" href="javascript:">
+				<div class="bar-img">
+					<img class="original-img" src="./images/tag/totop.png" alt="">
+					<img class="hover-img" src="./images/tag/totop_hover.png" alt="">
+				</div>
+				<p class="bar-text">回顶部</p>
+			</a>			
+		</div>		
+	</div>
+	<!-- 侧边栏结束 -->
+
+	<!-- 底部导航栏开始 -->
+	<div class="site-footer">
+		<div class="container">
+			<div class="footer-service">
+				<ul class="list-service clear-fix">
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe609;</i>
+							预约维修服务
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe601;</i>
+							7天无理由退货
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe605;</i>
+							15天免费换货
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe61f;</i>
+							满150元包邮
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont">&#xe608;</i>
+							520余家售后网点
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-links clear-fix">
+				<dl class="col-links col-links-first">
+					<dt>帮助中心</dt>
+					<dd><a href="javascript:void(0)">账户管理</a></dd>
+					<dd><a href="javascript:void(0)">购物指南</a></dd>
+					<dd><a href="javascript:void(0)">订单操作</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>服务支持</dt>
+					<dd><a href="javascript:void(0)">售后政策</a></dd>
+					<dd><a href="javascript:void(0)">自动服务</a></dd>
+					<dd><a href="javascript:void(0)">相关下载</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>线下门店</dt>
+					<dd><a href="javascript:void(0)">小米之家</a></dd>
+					<dd><a href="javascript:void(0)">服务网点</a></dd>
+					<dd><a href="javascript:void(0)">授权体验店</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关于小米</dt>
+					<dd><a href="javascript:void(0)">了解小米</a></dd>
+					<dd><a href="javascript:void(0)">加入小米</a></dd>
+					<dd><a href="javascript:void(0)">投资者关系</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关注我们</dt>
+					<dd><a href="javascript:void(0)">新浪微博</a></dd>
+					<dd><a href="javascript:void(0)">官方微信</a></dd>
+					<dd><a href="javascript:void(0)">联系我们</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>特色服务</dt>
+					<dd><a href="javascript:void(0)">F码通道</a></dd>
+					<dd><a href="javascript:void(0)">礼物码</a></dd>
+					<dd><a href="javascript:void(0)">防伪查询</a></dd>
+				</dl>
+				<div class="col-contact">
+					<p class="phone">400-100-5678</p>
+					<p>周一至周日8:00-18:00<br/>（仅收市话费）</p>
+					<a class="btn btn-line-primary btn-small" href="javascript:void(0)"><i class="iconfont">&#xe652;</i>联系客服</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部导航栏结束 -->
+
+	<!-- 页面信息栏开始 -->
+	<div class="site-info">
+		<div class="container">
+			<div class="logo ir">小米官网</div>
+			<div class="info-text">
+				<p class="sites">
+					<a href="javascript:">小米商城</a>
+					<span class="sep">|</span>
+					<a href="javascript:">MIUI</a>
+					<span class="sep">|</span>
+					<a href="javascript:">米家</a>
+					<span class="sep">|</span>
+					<a href="javascript:">米聊</a>
+					<span class="sep">|</span>
+					<a href="javascript:">多看</a>
+					<span class="sep">|</span>
+					<a href="javascript:">游戏</a>
+					<span class="sep">|</span>
+					<a href="javascript:">路由器</a>
+					<span class="sep">|</span>
+					<a href="javascript:">米粉卡</a>
+					<span class="sep">|</span>
+					<a href="javascript:">政企服务</a>
+					<span class="sep">|</span>
+					<a href="javascript:">小米天猫店</a>
+					<span class="sep">|</span>
+					<a href="javascript:">隐私政策</a>
+					<span class="sep">|</span>
+					<a href="javascript:">商城用户协议</a>
+					<span class="sep">|</span>
+					<a href="javascript:">账号协议</a>
+					<span class="sep">|</span>
+					<a href="javascript:">问题反馈</a>
+					<span class="sep">|</span>
+					<a href="javascript:">廉政举报</a>
+					<span class="sep">|</span>
+					<a href="javascript:">诚信合规</a>
+					<span class="sep">|</span>
+					<a href="javascript:">Select Region</a>					
+				</p>
+				<p>
+					@
+					<a href="_">mi.com</a>
+					 京ICP证110507号 
+					<a href="javascript:">京ICP备10046444号 </a>
+					<a href="javascript:">京公网安备11010802020134号 </a>
+					<a href="javascript:">京网文[2017]1530-131号 </a>
+					<br/>
+					<a href="javascript:">（京）网械平台备字（2018）第00005号 </a>
+					<a href="javascript:">互联网药品信息服务资格证 (京) -非经营性-2014-0090 </a>
+					<a href="javascript:">营业执照 </a>
+					<a href="javascript:">医疗器械公告 </a>
+					<br/>
+					<a href="javascript:">增值电信业务许可证 </a>
+						网络食品经营备案（京）【2018】WLSPJYBAHF-12	  
+					<a href="javascript:">食品经营许可证 </a>
+					<br/>
+					违法和不良信息举报电话：185-0130-1238 
+					<a href="javascript:">知识产权侵权投诉 </a>
+					 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+				</p>
+			</div>
+			<div class="info-links">
+				<a href="javascript:"><img src="./images/tag/truste.png" alt=""></a>
+				<a href="javascript:"><img src="./images/tag/v-logo-2.png" alt=""></a>
+				<a href="javascript:"><img src="./images/tag/v-logo-1.png" alt=""></a>
+				<a href="javascript:"><img src="./images/tag/v-logo-3.png" alt=""></a>
+				<a href="javascript:"><img src="./images/tag/ba10428a4f9495ac310fd0b5e0cf8370.png" alt=""></a>
+			</div>
+		</div>
+		<div class="slogan ir">搜索黑科技，小米为发烧而生！</div>
+	</div>
+	<!-- 页面信息栏结束 -->
+
+<script>
+</script>
+</body>
+</html>
