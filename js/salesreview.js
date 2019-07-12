@@ -24,7 +24,7 @@
 		var activeItems = target.getElementsByClassName('brick-item-active');		
 		// 去除 brick-item-active
 		for (var i = 0; i < activeItems.length; i++) {
-			activeItems[i].className = activeItems[i].className.replace('brick-item-active','');	
+			activeItems[i].className = activeItems[i].className.replace(' brick-item-active','');	
 		}		
 	});
 })()

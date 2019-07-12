@@ -13,7 +13,7 @@
 
 	// 定义自动动画函数
 	function slideAnimate(index) {
-			// 先把已经显示的图片隐藏
+		// 先把已经显示的图片隐藏
 		slider.children().filter(':visible').fadeOut(slideSpeed).css({ zIndex : 0 });
 		// 显示需要的图片
 		slider.children().eq(index).css('zIndex',51).fadeIn(slideSpeed,function(){$(this).css('zIndex',50);});
